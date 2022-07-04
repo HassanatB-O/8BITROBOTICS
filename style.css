@@ -46,10 +46,47 @@ body{
     margin: 10px 0 10px 0;
     border-radius: 50%;
 }
-#description{
+span{
+    animation: open 10s;
+    animation-delay: 8s;
+}
+@keyframes open{
+    100%{
+        color: rgb(237, 31, 31);
+        font-size: 30px;
+    }
+}
+#text2{
+    display: none;
+}
+#description, #description1, #description2, #description3, #description4{
     text-transform: uppercase;
     color: hsl(207, 100%, 98%);
     text-align: center;
+    position: relative;
+}
+#description{
+    animation: move 3s;
+}
+#description1{
+    animation: move 5s;
+}
+#description2{
+    animation: move 7s;
+}
+#description3{
+    animation: move 9s;
+}
+#description4{
+    animation: move 11s;
+}
+@keyframes move{
+    from{
+        right: 100vw;
+    }
+    to{
+        right: 0;
+    }
 }
 h3{
     font-size: 30px;
