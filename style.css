@@ -65,7 +65,7 @@ h3{
 }
 @media screen and (max-width: 400px){
     #container{
-        width: 80%;
+        width: 90%;
     }
     #image{
         box-sizing: border-box; 
